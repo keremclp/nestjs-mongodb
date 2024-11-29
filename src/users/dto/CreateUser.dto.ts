@@ -7,6 +7,7 @@ export class createUserDto{
     username:string;
     
     @IsString()
+    @IsOptional()
     displayname?:string;
 
 }

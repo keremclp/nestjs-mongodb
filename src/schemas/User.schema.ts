@@ -6,7 +6,7 @@ export class User{
     @Prop({ unique:true, required:true })
     username: string;
     
-    @Prop({ required:true })
+    @Prop({ required:false })
     displayName?:string;
 
     @Prop({ required:false })
