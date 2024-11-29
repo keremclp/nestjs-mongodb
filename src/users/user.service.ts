@@ -13,4 +13,12 @@ export class UserService{
         return newUser.save()
     }
 
+    getUsers(){
+        return this.userModel.find()
+    }
+
+    getUserById(id:string){
+        return this.userModel.findById(id)
+    }
+
 }
